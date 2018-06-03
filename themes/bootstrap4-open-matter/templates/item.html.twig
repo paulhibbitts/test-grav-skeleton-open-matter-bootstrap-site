@@ -15,7 +15,12 @@
         <div class="main-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 blog-main">
+                    {# check content display flag - hibbittsdesign.org #}
+                    {% if not (grav.uri.param('chromeless')) and not (page.parent.header.hide_sidebar) %}
+                      <div class="col-sm-8 blog-main">
+                    {% else %}
+                      <div class="col-sm-12 blog-main">
+                    {% endif %}
                         {% if config.plugins.breadcrumbs.enabled %}
                             {% include 'partials/breadcrumbs.html.twig' %}
                         {% endif %}
@@ -23,9 +28,13 @@
                         {% include 'partials/blog_item.html.twig' with {'blog':page.parent, 'truncate':false, 'big_header':false} %}
                     </div>
 
-                    <div class="col-sm-3 offset-sm-1 blog-sidebar">
-                        {% include 'partials/sidebar.html.twig' with {'blog':page.parent} %}
-                    </div>
+                    {# check content display flag - hibbittsdesign.org #}
+                    {% if not (grav.uri.param('chromeless')) and not (config.site.hidesidebaronblogpages.enabled) and not (page.parent.header.hide_sidebar) %}
+                      <div class="col-sm-3 offset-sm-1 blog-sidebar">
+                          {% include 'partials/sidebar.html.twig' with {'blog':page.parent} %}
+                      </div>
+                    {% endif %}
+
                 </div>
             </div>
         </div>

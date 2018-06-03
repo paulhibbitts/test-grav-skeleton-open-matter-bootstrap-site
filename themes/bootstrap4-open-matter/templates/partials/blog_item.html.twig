@@ -1,8 +1,8 @@
 <div class="list-item">
 
     {% set header_image = page.header.header_image|defined(true) %}
-    {% set header_image_width  = page.header.header_image_width|defined(900) %}
-    {% set header_image_height = page.header.header_image_height|defined(300) %}
+    {% set header_image_width  = page.header.header_image_width|defined(1200) %}
+    {% set header_image_height = page.header.header_image_height|defined(400) %}
     {% set header_image_file = page.header.header_image_file %}
 
     <div class="list-blog-header">
@@ -69,7 +69,13 @@
             {% endif %}
             <p><a href="{{ page.url }}">Continue Reading...</a></p>
         {% else %}
-            <p>{{ page.content }}</p>
+            {# check to hide post summary on page - hibbittsdesign.org #}
+            {% if page.parent.header.display_post_summary %}
+              {% set content = page.content | slice(page.summary | length) %}
+            {% else %}
+              {% set content = page.content %}
+            {% endif %}
+            <p>{{ content }}</p>
             {% set show_prev_next = true %}
         {% endif %}
 
