@@ -1,6 +1,5 @@
 ---
-title: One Page Demo Site
-menu: Home
+title: Home
 onpage_menu: false
 body_classes: "modular header-image fullwidth"
 
@@ -15,5 +14,3 @@ content:
             - _callout
             - _features
 ---
-
-
