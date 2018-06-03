@@ -42,12 +42,12 @@
 
                     </div>
 
-                    {# check content display flag - hibbittsdesign.org #}
-                      {% if not (grav.uri.param('chromeless')) and not (config.site.hidesidebaronblogpages.enabled) and not (page.header.hide_sidebar) %}
-                        <div class="col-sm-3 offset-sm-1 blog-sidebar">
-                            {% include 'partials/sidebar.html.twig' with {'blog':page} %}
-                        </div>
-                      {% endif %}
+                    {# Check content display flag - hibbittsdesign.org #}
+                    {% if not (grav.uri.param('chromeless')) and not (config.site.hidesidebaronblogpages.enabled) and not (page.header.hide_sidebar) %}
+                      <div class="col-sm-3 offset-sm-1 blog-sidebar">
+                          {% include 'partials/sidebar.html.twig' with {'blog':page} %}
+                      </div>
+                    {% endif %}
 
                 </div>
             </div>
