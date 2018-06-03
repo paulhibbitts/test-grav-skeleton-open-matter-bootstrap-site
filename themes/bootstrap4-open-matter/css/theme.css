@@ -17,19 +17,32 @@ Theme CSS.
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-    .myheader {
-        height: 170px;
-    }
+  .myheader {
+      height: 170px;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-    .myheader {
-        height: 130px;
-    }
+  .myheader {
+      height: 130px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-    .myheader {
-        height: 90px;
-    }
+  .myheader {
+      height: 90px;
+  }
+}
+
+body {
+  margin-bottom: 260px!important;
+}
+
+.up-arrow {
+  text-align: center;
+  font-size: 4em;
+}
+
+.footer {
+  height: 200px!important;
 }
