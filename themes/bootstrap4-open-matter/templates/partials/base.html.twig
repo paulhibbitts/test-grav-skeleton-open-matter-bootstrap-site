@@ -55,7 +55,13 @@
         {% if not (grav.uri.param('chromeless')) and not(theme_var('chromeless.enabled')) %}
           <div class="footer">
               <div class="container">
-                  <p class="text-muted">Bootstrap 4 Theme for <a href="http://getgrav.org">Grav</a></p>
+                {# use footer folder page for content - hibbittsdesign.org #}
+                <div class="text-muted">
+                  {% set content = pages.find('/footer').content %}
+                  {% if content %}
+                    {{ content }}
+                  {% endif %}
+                  </div>
               </div>
           </div>
         {% endif %}
