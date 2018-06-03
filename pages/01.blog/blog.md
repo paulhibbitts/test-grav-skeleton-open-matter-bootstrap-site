@@ -10,7 +10,7 @@ content:
         by: date
         dir: desc
     pagination: '1'
-hide_sidebar: true
+hide_sidebar: false
 display_post_summary: false
 hide_post_date: false
 hide_post_taxonomy: false
