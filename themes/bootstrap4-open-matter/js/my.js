@@ -2,7 +2,7 @@ $(document).ready(function(){
    $("a.newwindow").attr("target","_blank");
    $("a.topwindow").attr("target","_top");
 
-  $('.container').on('click', 'a:not(.external-link):not([href^="#"])', function(e){
+  $('#body').on('click', 'a:not(.external-link):not([href^="#"])', function(e){
      if ($(this).attr('rel') != 'lightbox'){
       e.preventDefault();
       var url  = window.location.href;
