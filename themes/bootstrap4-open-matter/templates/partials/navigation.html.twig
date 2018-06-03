@@ -1,5 +1,12 @@
 {% set navbar_style = theme_var('navbar_style') %}
 {% set navbar_bgcolor = theme_var('navbar_bgcolor') %}
+
+{% set background_image = pages.find('/headerimage').media.images|first %}
+{{ dump (background_image) }}
+{% if background_image %}
+  <div class="myheader" style="background-image: url({{ background_image.url }});"></div>
+{% endif %}
+
 <nav class="navbar navbar-expand-md {{ navbar_style }}" style="background-color:{{ navbar_bgcolor }};" role="navigation">
     <div class="container">
         <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url_relative }}">{{ site.title|e('html') }}</a>

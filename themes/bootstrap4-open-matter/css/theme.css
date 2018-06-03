@@ -1,5 +1,35 @@
 /*
 ===============================================================================================================================
-Put your custom CSS in this file.
+Theme CSS.
 ===============================================================================================================================
 */
+
+.myheader {
+  background-color: #464646;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  width: auto;
+  height: 210px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .myheader {
+        height: 170px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .myheader {
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .myheader {
+        height: 90px;
+    }
+}
