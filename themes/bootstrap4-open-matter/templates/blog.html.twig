@@ -15,11 +15,12 @@
     {% block content %}
         {# check content display flag - hibbittsdesign.org #}
         {% if not (grav.uri.param('chromeless')) and not(theme_var('chromeless.enabled')) %}
-          <div class="header">
+          {# remove default Bootstrap hero - hibbittsdesign.org #}
+          {#<div class="header">
               <div class="container">
                   {{ page.content }}
               </div>
-          </div>
+          </div>#}
         {% endif %}
         <div class="main-content">
             <div class="container">
