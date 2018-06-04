@@ -2,7 +2,6 @@
 {% set navbar_bgcolor = theme_var('navbar_bgcolor') %}
 
 {% set background_image = pages.find('/headerimage').media.images|first %}
-{{ dump (background_image) }}
 {% if background_image %}
   <div class="myheader" style="background-image: url({{ background_image.url }});"></div>
 {% endif %}
