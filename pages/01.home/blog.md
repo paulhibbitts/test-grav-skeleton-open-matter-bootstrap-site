@@ -22,7 +22,7 @@ display_post_summary: false
 hide_post_date: false
 hide_post_taxonomy: false
 hide_git_sync_repo_link: false
-blog_url: blog
+blog_url: home
 feed:
     description: 'Sample Blog Description'
     limit: 10
