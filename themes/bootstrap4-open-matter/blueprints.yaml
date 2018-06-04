@@ -108,6 +108,13 @@ form:
                   'footer':            Footer
                   'none':              None
 
+        git_sync.edit_theme_link_text:
+          type:                        input.text
+          size:                        medium
+          label:                       Site Theme Files Link Text
+          default:                     'Site Theme Files'
+          description:                 Customize the Site Theme Files link text.
+
         pagecontent:
             type: section
             title: Page Content

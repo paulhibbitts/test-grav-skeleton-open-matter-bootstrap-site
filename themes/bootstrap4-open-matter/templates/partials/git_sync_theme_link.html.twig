@@ -1,5 +1,5 @@
 {# new twig template file - hibbittsdesign.org #}
-{% if config.site.gitrepo.edittreeurl %}
+{% if theme_var('git_sync_repo_link') %}
   {% set gitrepothemeeditlinkurl = config.site.gitrepo.edittreeurl ~ '/themes/mytheme/' %}
   {% set git_repo_link_url = config.site.gitrepo.edittreeurl %}
   {% if config.site.gitrepo.editlinkicon is empty %}

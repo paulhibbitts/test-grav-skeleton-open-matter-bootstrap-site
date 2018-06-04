@@ -103,6 +103,18 @@ right: 0;
   color: #ccc;
 }
 
+h4, .h4, h5, .h5 {
+    margin-top: 15.5px;
+    margin-bottom: 5.5px;
+}
+
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+
 .up-arrow {
   text-align: center;
   font-size: 4em;
