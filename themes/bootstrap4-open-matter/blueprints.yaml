@@ -50,7 +50,6 @@ form:
             options:
                 menu: Menu
                 page: Page (visible when 'Chromeless')
-                footer: Footer
                 none: None
 
         type_of_git_sync_repo_link:
