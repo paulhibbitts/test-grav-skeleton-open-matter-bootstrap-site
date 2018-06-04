@@ -41,7 +41,7 @@ Theme CSS.
 }
 
 body {
-  margin-bottom: 260px!important;
+  margin-bottom: 270px!important;
 }
 
 .list-item {
@@ -110,8 +110,10 @@ right: 0;
 .up-arrow {
   text-align: center;
   font-size: 4em;
+  margin-top: -10px;
+  margin-bottom: -20px;
 }
 
 .footer {
-  height: 200px!important;
+  height: 210px!important;
 }
