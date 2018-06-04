@@ -17,9 +17,9 @@
         {% else %}
           <h3 aria-label={{page.title}}></h3>
         {% endif %}
-
         {{ page.content }}
         <div id="accordion" role="tablist" aria-multiselectable="true">
+
           <div class="card">
 
               {% set collection = page.collection() %}
@@ -77,3 +77,11 @@
   {% endblock %}
 
 {% endembed %}
+
+<script>
+
+$(document).ready(function(){
+
+});
+
+</script>
