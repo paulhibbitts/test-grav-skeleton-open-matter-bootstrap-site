@@ -27,9 +27,9 @@
                 <div class="row">
                   {# check content display flag - hibbittsdesign.org #}
                   {% if not (grav.uri.param('chromeless')) and not (config.site.hidesidebaronblogpages.enabled) and not (page.header.hide_sidebar) %}
-                    <div class="col-sm-8 blog-main">
+                    <div class="col-md-8 blog-main">
                   {% else %}
-                    <div class="col-sm-12 blog-main">
+                    <div class="col-md-12 blog-main">
                   {% endif %}
 
                         {% if config.plugins.breadcrumbs.enabled %}
@@ -44,7 +44,7 @@
 
                     {# Check content display flag - hibbittsdesign.org #}
                     {% if not (grav.uri.param('chromeless')) and not (config.site.hidesidebaronblogpages.enabled) and not (page.header.hide_sidebar) %}
-                      <div class="col-sm-3 offset-sm-1 blog-sidebar">
+                      <div class="col-md-4 blog-sidebar">
                           {% include 'partials/sidebar.html.twig' with {'blog':page} %}
                       </div>
                     {% endif %}
@@ -58,7 +58,12 @@
         {% if config.plugins.pagination.enabled and collection.params.pagination %}
         <div class="container pagination-container">
             <div class="row">
-                <div class="col-sm-8">
+                {# check content display flag - hibbittsdesign.org #}
+                {% if not (grav.uri.param('chromeless')) and not (config.site.hidesidebaronblogpages.enabled) and not (page.header.hide_sidebar) %}
+                  <div class="col-md-8">
+                {% else %}
+                  <div class="col-md-12">
+                {% endif %}
                     {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
                 </div>
             </div>
