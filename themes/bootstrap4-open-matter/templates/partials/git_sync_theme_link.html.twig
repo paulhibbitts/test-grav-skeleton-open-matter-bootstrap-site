@@ -1,6 +1,6 @@
 {# new twig template file - hibbittsdesign.org #}
 {% if theme_var('git_sync_repo_link') %}
-  {% set gitrepothemeeditlinkurl = theme_var('git_sync_repo_link') ~ '/themes/mytheme/' %}
+  {% set gitrepothemeeditlinkurl = theme_var('git_sync_repo_link') ~ '/themes/' ~ config.system.pages.theme ~ '/' %}
   {% set git_repo_link_url = config.site.gitrepo.edittreeurl %}
   {% if config.site.gitrepo.editlinkicon is empty %}
     {% if 'github' in git_repo_link_url %}
