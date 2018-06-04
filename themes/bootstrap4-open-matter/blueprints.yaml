@@ -50,6 +50,7 @@ form:
             options:
                 menu: Menu
                 page: Page (visible when 'Chromeless')
+                footer: Footer
                 none: None
 
         type_of_git_sync_repo_link:
@@ -91,6 +92,21 @@ form:
             label: Text before Git Sync Link on Pages
             default: 'Have a suggestion or correction?'
             description: 'Text before the link (only when displayed on a Page).'
+
+
+        gitsynctheme:
+            type:                              section
+            title:                             Git Sync Site Theme Files Link
+            underline:                         true
+
+        git_sync.edit_theme_link_location:
+            type:                      select
+            label:                     Location of Site Theme Files Link
+            default:                   None
+            size:                      small
+            options:
+                  'footer':            Footer
+                  'none':              None
 
         pagecontent:
             type: section
