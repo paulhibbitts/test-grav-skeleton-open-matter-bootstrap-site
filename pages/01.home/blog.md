@@ -10,6 +10,13 @@ content:
         by: date
         dir: desc
     pagination: '1'
+modular_content:
+    items: '@self.modular'
+    order:
+        by: default
+        custom:
+            - _important-reminders
+            - _unit-preparations
 hide_sidebar: false
 display_post_summary: false
 hide_post_date: false
