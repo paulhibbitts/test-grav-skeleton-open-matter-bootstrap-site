@@ -91,14 +91,16 @@
             {% endif %}
         {% elseif truncate and page.summary != page.content %}
             <p>{{ page.summary }}</p>
-            <p><a href="{{ page.url }}">Continue Reading...</a></p>
+            <p><a href="{{ page.url }}">View all of {{ page.title }} <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+            <hr>
         {% elseif truncate %}
             {% if page.summary != page.content %}
                 <p>{{ page.content|truncate(550) }}</p>
             {% else %}
                 <p>{{ page.content }}</p>
             {% endif %}
-            <p><a href="{{ page.url }}">Continue Reading...</a></p>
+            <p><a href="{{ page.url }}">View all of {{ page.title }} <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+            <hr>
         {% else %}
             {# check to hide post summary on page - hibbittsdesign.org #}
             {% if page.parent.header.display_post_summary %}
