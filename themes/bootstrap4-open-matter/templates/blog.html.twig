@@ -32,6 +32,16 @@
                     <div class="col-md-12 blog-main">
                   {% endif %}
 
+                        {# Added reminders and preparations blocks and content check - hibbittsdesign.org #}
+                        {% if page.collection('modular_content') is not empty %}
+                          {% for module in page.collection('modular_content') %}
+                            {% if (module.content|striptags)|trim %}
+                              <p>{{ module.content }}</p>
+                            {% endif %}
+                          {% endfor %}
+                          <hr>
+                        {% endif %}
+
                         {% if config.plugins.breadcrumbs.enabled %}
                             {% include 'partials/breadcrumbs.html.twig' %}
                         {% endif %}
