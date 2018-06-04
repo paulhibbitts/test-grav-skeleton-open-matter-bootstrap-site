@@ -44,6 +44,61 @@ body {
   margin-bottom: 260px!important;
 }
 
+.list-item-modular {
+    margin: -20px 0 0px;
+}
+
+.listbullet ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.listbullet li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.listbullet li:before {
+  content: '\2713';
+  padding-right: 5px;
+}
+
+.image-credit-wrapper {
+overflow: hidden;
+position: relative;
+max-width: 1200px;
+}
+
+.image-credit-wrapper .image-credit {
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
+
+.image-credit {
+background: rgba(0,0,0,.5);
+border-top-left-radius:3px;
+color: #ccc;
+display: inline-block;
+font-size: 11px;
+font-family: helvetica;
+font-weight: 300;
+padding: 5px 8px;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.image-credit a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.image-credit a:hover {
+  color: #ccc;
+}
+
 .up-arrow {
   text-align: center;
   font-size: 4em;
