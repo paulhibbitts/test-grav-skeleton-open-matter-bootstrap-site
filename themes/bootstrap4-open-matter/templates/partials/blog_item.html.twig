@@ -16,7 +16,24 @@
                 <a href="{{ page.header.link }}">{{ page.title }}</a>
             </h3>
         {% else %}
-            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        {# added page title icon - hibbittsdesign.org #}
+        {% if page.header.icon %}
+          {% set titleicon = page.header.icon %}
+        {% else %}
+          {% if config.site.icon.post %}
+            {% set titleicon = page.parent.post_icon %}
+          {% endif %}
+          {% if page.parent.header.post_icon %}
+            {% set titleicon = page.parent.header.post_icon %}
+            {% endif %}
+          {% endif %}
+          {% if not (grav.uri.param('hidepagetitle')) %}
+            {% if titleicon %}
+              <h3 class="p-name"><a href="{{ page.url }}" class="u-url"><i class="fa fa-{{ titleicon }}" aria-hidden="true"></i> {{ page.title }}</a></h3>
+            {% else %}
+              <h3 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h3>
+            {% endif %}
+            {% endif %}
         {% endif %}
 
         <div class="list-blog-meta my-3">
