@@ -4,6 +4,14 @@ Theme CSS.
 ===============================================================================================================================
 */
 
+/* CSS to better match font family with Canvas LMS*/
+/*
+body {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+}
+*/
+
 .myheader {
   background-color: #464646;
   background-repeat:no-repeat;
