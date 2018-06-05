@@ -44,7 +44,7 @@ form:
                 type:                      text
                 size:                      small
                 label:                     Default Blog Item Font Awesome Icon
-                description:               Short name, e.g. 'newspaper'.
+                description:               Short name, e.g. 'newspaper-o'.
                 help:                      Determines the default Font Awesome icon used for the blog posts.
                 validate:
                     type:                  text
