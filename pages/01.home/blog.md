@@ -10,6 +10,12 @@ content:
         by: date
         dir: desc
     pagination: '1'
+hide_sidebar: false
+display_post_summary: false
+post_icon: newspaper-o
+hide_post_date: false
+hide_post_taxonomy: false
+hide_git_sync_repo_link: false
 modular_content:
     items: '@self.modular'
     order:
@@ -17,11 +23,6 @@ modular_content:
         custom:
             - _important-reminders
             - _unit-preparations
-hide_sidebar: false
-display_post_summary: false
-hide_post_date: false
-hide_post_taxonomy: false
-hide_git_sync_repo_link: false
 blog_url: home
 feed:
     description: 'Sample Blog Description'
