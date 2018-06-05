@@ -17,7 +17,7 @@
             {% endif %}
               {{ page.content }}
               {# Creative Commons License -  hibbittsdesign.org #}
-              {% if theme_var('cc_license.enabled') %}
+              {% if theme_var('cc_license.enabled') and not(page.header.hide_cc_license) %}
                 <br>
                 {% include 'partials/creative_commons_license.html.twig' %}
                 <br>
