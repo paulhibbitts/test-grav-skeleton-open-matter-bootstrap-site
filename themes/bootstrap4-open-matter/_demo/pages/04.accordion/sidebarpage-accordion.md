@@ -1,5 +1,5 @@
 ---
-title: 'Sample Accordion'
+title: 'Accordion'
 published: true
 hide_git_sync_repo_link: false
 cache_enable: false
