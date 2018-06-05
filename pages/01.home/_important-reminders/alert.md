@@ -1,6 +1,8 @@
 ---
 title: 'Important Reminders'
+alert_style: alert-primary
 published: true
+visible: false
 ---
 
 ** Important Reminders **  
