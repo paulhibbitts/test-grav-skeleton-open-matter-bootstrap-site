@@ -1,6 +1,6 @@
 ---
 title: 'Important Reminders'
-published: false
+published: true
 ---
 
 ** Important Reminders **  
