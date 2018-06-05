@@ -11,7 +11,7 @@ class Bootstrap4OpenMatter extends Bootstrap4
     public static function getSubscribedEvents()
     {
         return [
-            'onThemeInitialized'    => ['onThemeInitialized', 0],
+            'onThemeInitialized'  => ['onThemeInitialized', 0],
             'onShortcodeHandlers' => ['onShortcodeHandlers', 0]
         ];
     }
@@ -25,5 +25,5 @@ class Bootstrap4OpenMatter extends Bootstrap4
     {
         $this->grav['shortcode']->registerAllShortcodes('theme://shortcodes');
     }
-    
+
 }
