@@ -12,6 +12,19 @@ body {
 }
 */
 
+/* CSS to better match link colors with Canvas LMS*/
+/*
+ a:not(btn) {
+  color: #008EE2;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #008EE2;
+  text-decoration: underline;
+}
+*/
+
 .myheader {
   background-color: #464646;
   background-repeat:no-repeat;
