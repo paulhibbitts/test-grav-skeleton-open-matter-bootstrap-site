@@ -115,9 +115,9 @@ form:
           default:                     'Site Theme Files'
           description:                 Customize the Site Theme Files link text.
 
-        pagecontent:
+        h5pcontent:
             type: section
-            title: Page Content
+            title: H5P Content
             underline: true
 
         h5pembedrootpath:
@@ -130,9 +130,15 @@ form:
             validate:
                 type: URL
 
+
+        creativecommonslicenseoptions:
+            type: section
+            title: Creative Commons License
+            underline: true
+
         cc_license.enabled:
             type:                      toggle
-            label:                     Display Creative Commons License
+            label:                     Display CC License
             highlight:                 1
             default:                   0
             options:
@@ -140,6 +146,39 @@ form:
                 0:                     No
             validate:
                 type:                  bool
+
+        cc_license.type:
+          type:                        select
+          label:                       CC License Type
+          default:                     ccby
+          size:                        long
+          description:                 'Looking for more info about Creative Commons (CC) Licenses?<br> Visit the <a href="https://creativecommons.org/" target="_blank">creativecommons.org</a> site.'
+          options:
+              ccby:                    'CC Attribution'
+              ccbysa:                  'CC Attribution Share Alike'
+              ccbynd:                  'CC Attribution No Derivatives'
+              ccbync:                  'CC Attribution Non-Commercial'
+              ccbyncsa:                'CC Attribution Non-Commercial Share Alike'
+              ccbyncnd:                'CC Attribution Non-Commercial No Derivatives'
+
+        cc_license.icon:
+            type:                      toggle
+            label:                     Display Only CC License Icon
+            highlight:                 1
+            default:                   0
+            options:
+                1:                     Yes
+                0:                     No
+            validate:
+                type:                  bool
+
+        cc_license.text:
+            type:                      text
+            size:                      long
+            description:               'For example, ''except where otherwise noted.'''
+            label:                     Additional CC License Text
+            validate:
+                type:                  text
 
         menubaroptions:
             type:                              section
