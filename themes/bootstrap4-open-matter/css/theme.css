@@ -112,7 +112,7 @@ h4, .h4, h5, .h5 {
   transition: .3s transform ease-in-out;
 }
 .card-header .collapsed .fa {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 .up-arrow {
