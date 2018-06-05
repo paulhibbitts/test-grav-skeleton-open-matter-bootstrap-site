@@ -127,7 +127,7 @@
             {% endif %}
 
             {# check summary only flag - hibbittsdesign.org #}
-            {% if not (grav.uri.param('summaryonly')) %}
+            {% if not (grav.uri.param('summaryonly')) and not (grav.uri.param('onlysummary')) %}
               {% if content is not empty  %}
                     <p>{{ content }}</p>
               {% else %}

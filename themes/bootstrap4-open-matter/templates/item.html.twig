@@ -22,7 +22,7 @@
                       <div class="col-md-12 blog-main">
                     {% endif %}
                         {# no breadcrumbs if summary only flag - hibbittsdesign.org #}
-                        {% if config.plugins.breadcrumbs.enabled and not (grav.uri.param('summaryonly')) %}
+                        {% if config.plugins.breadcrumbs.enabled %}
                             {% include 'partials/breadcrumbs.html.twig' %}
                         {% endif %}
 
