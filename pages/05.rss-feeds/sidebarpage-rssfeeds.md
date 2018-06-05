@@ -7,6 +7,7 @@ rss_feed_pagination: true
 rss_feed_header_images: true
 rss_feed_preview_paragraphs: two
 hide_page_title: false
+hide_cc_license: true
 ---
 
 A look at what's going on in the field of user experience.
