@@ -46,10 +46,20 @@
                           <hr>
                         {% endif %}
 
+                        {# Added display of featured post - hibbittsdesign.org #}
+                        {% for post in taxonomy.findTaxonomy({'tag': "featured"}) %}
+                          {% if (post.header.hide_from_post_list != true) and (post.parent.slug == page.slug) %}
+                            {% include 'partials/blog_item.html.twig' with {'page':post, 'truncate':true} %}
+                          {% endif %}
+                        {% endfor %}
+
                         {% for child in collection %}
                           {# Added check for hiding post in list - hibbittsdesign.org #}
                           {% if child.header.hide_from_post_list != true %}
-                            {% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
+                            {# Added check for not repeating feature post - hibbittsdesign.org #}
+                            {% if "featured" not in child.taxonomy['tag'] %}
+                              {% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
+                            {% endif %}
                           {% endif %}
                         {% endfor %}
 
