@@ -47,7 +47,10 @@
                         {% endif %}
 
                         {% for child in collection %}
+                          {# Added check for hiding post in list - hibbittsdesign.org #}
+                          {% if child.header.hide_from_post_list != true %}
                             {% include 'partials/blog_item.html.twig' with {'page':child, 'truncate':true} %}
+                          {% endif %}
                         {% endfor %}
 
                     </div>
