@@ -65,6 +65,10 @@ body {
   margin-bottom: 270px!important;
 }
 
+.alert {
+    padding: .15rem 1.25rem!important;
+}
+
 .list-item {
     margin: -1px 0 0px!important;
 }
