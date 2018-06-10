@@ -1,11 +1,7 @@
 ---
-title: One Page Demo Site
-menu: Home
-onpage_menu: false
-body_classes: "modular header-image fullwidth"
-
+title: 'One Page Demo Site'
 content:
-    items: @self.modular
+    items: '@self.modular'
     order:
         by: default
         dir: asc
@@ -14,6 +10,8 @@ content:
             - _highlights
             - _callout
             - _features
+body_classes: 'modular header-image fullwidth'
+menu: Home
+onpage_menu: false
 ---
-
 
