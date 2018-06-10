@@ -54,6 +54,9 @@
 {% endblock %}
 
 {% block content %}
+  {# added page format div - hibbittsdesign.org #}
+  <div class="main-content">
+    <div class="container">
       {{ page.content }}
       {% for module in page.collection() %}
       	<div class="modular-anchor" id="{{ _self.pageLinkName(module.menu) }}"></div>
@@ -73,4 +76,6 @@
         {% include 'partials/git_sync_repo_link_note.html.twig' %}
         <br>
       {% endif %}
+    </div>
+  </div>
 {% endblock %}
