@@ -12,7 +12,8 @@ class Bootstrap4OpenMatter extends Bootstrap4
     {
         return [
             'onThemeInitialized'  => ['onThemeInitialized', 0],
-            'onShortcodeHandlers' => ['onShortcodeHandlers', 0]
+            'onShortcodeHandlers' => ['onShortcodeHandlers', 0],
+            'onTwigSiteVariables' => ['onTwigSiteVariables', 0]
         ];
     }
 
@@ -24,6 +25,13 @@ class Bootstrap4OpenMatter extends Bootstrap4
     public function onShortcodeHandlers()
     {
         $this->grav['shortcode']->registerAllShortcodes('theme://shortcodes');
+    }
+
+    public function onTwigSiteVariables()
+    {
+        if ($this->isAdmin() && ($this->grav['config']->get('plugins.shortcode-core.enabled'))) {
+            $this->grav['assets']->add('theme://editor-buttons/admin/js/shortcode-h5p.js');
+      }
     }
 
 }
