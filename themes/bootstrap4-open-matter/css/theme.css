@@ -65,6 +65,17 @@ body {
   margin-bottom: 270px!important;
 }
 
+.header {
+    background-color: transparent!important;
+    color: #000000!important;
+}
+
+.header h1 {
+    font-size: 60px;
+    color: #000000!important;
+    margin-top: 0;
+}
+
 .alert {
     padding: .15rem 1.25rem!important;
 }
