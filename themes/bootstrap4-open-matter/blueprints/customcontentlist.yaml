@@ -46,14 +46,14 @@ form:
                 title: "Appearance"
                 underline: true
 
-            header.hide_sidebar:
+            header.show_sidebar:
                 type:                      toggle
-                label:                     Display Sidebar on Page
-                highlight:                 0
-                default:                   0
+                label:                     Display Sidebar Page
+                highlight:                 1
+                default:                   1
                 options:
-                    0:                     Yes
-                    1:                     No
+                    1:                     Yes
+                    0:                     No
                 validate:
                     type:                  bool
 

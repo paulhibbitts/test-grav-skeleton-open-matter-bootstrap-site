@@ -1,4 +1,4 @@
-title: Course Hub Item Options
+title: Open Matter Item Options
 @extends:
     type: default
     context: blueprints://pages
@@ -132,7 +132,7 @@ form:
               classes: large
               placeholder: ===
 
-            coursehub1:
+            openmatter1:
                 type: section
                 title: Title Icon
                 underline: true
@@ -146,7 +146,7 @@ form:
                 validate:
                     type: text
 
-            coursehub2:
+            openmatter2:
                 type: section
                 title: Blog List Options
                 underline: true
@@ -175,7 +175,7 @@ form:
                 validate:
                     type: bool
 
-            coursehub3:
+            openmatter3:
                 type: section
                 title: Git Repository
                 underline: true

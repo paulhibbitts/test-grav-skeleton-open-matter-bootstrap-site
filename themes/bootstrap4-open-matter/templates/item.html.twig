@@ -1,3 +1,9 @@
+{% if page.parent.header.show_sidebar is defined %}
+  {% set show_sidebar = page.parent.header.show_sidebar %}
+{% else %}
+  {% set show_sidebar = true %}
+{% endif %}
+
 {% embed 'partials/base.html.twig' %}
 
     {% set base_url = page.parent.url %}
@@ -16,7 +22,7 @@
             <div class="container">
                 <div class="row">
                     {# check content display flag - hibbittsdesign.org #}
-                    {% if not (grav.uri.param('chromeless')) and not (page.parent.header.hide_sidebar) %}
+                    {% if not (grav.uri.param('chromeless')) and (show_sidebar) %}
                       <div class="col-md-8 blog-main">
                     {% else %}
                       <div class="col-md-12 blog-main">
@@ -30,7 +36,7 @@
                     </div>
 
                     {# check content display flag - hibbittsdesign.org #}
-                    {% if not (grav.uri.param('chromeless')) and not (config.site.hidesidebaronblogpages.enabled) and not (page.parent.header.hide_sidebar) %}
+                    {% if not (grav.uri.param('chromeless')) and (show_sidebar) %}
                       <div class="col-md-4 blog-sidebar">
                           {% include 'partials/sidebar.html.twig' with {'blog':page.parent} %}
                       </div>

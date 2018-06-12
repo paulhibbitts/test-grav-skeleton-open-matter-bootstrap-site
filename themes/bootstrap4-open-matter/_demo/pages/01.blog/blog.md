@@ -10,7 +10,7 @@ content:
         by: date
         dir: desc
     pagination: '1'
-hide_sidebar: false
+show_sidebar: false
 display_post_summary: false
 post_icon: newspaper-o
 hide_post_date: false

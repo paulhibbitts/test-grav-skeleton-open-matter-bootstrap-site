@@ -22,7 +22,7 @@
         {# check content display flag - hibbittsdesign.org #}
         {% if not (grav.uri.param('chromeless')) and not(theme_var('chromeless.enabled')) %}
           {# remove default Bootstrap hero - hibbittsdesign.org #}
-          {#{% set blog_image = page.media.images | first %}
+          {% set blog_image = page.media.images | first %}
           {% if blog_image %}
             <div class="header" style="background-image: url({{ blog_image.url }});">
           {% else %}
@@ -31,7 +31,7 @@
               <div class="container">
                   {{ page.content }}
               </div>
-          </div>#}
+          </div>
         {% endif %}
         <div class="main-content">
             <div class="container">

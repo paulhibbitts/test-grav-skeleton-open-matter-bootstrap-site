@@ -1,24 +1,25 @@
 ---
 title: Blog
-blog_url: blog
-body_classes: header-image fullwidth
-
 sitemap:
     changefreq: monthly
-    priority: 1.03
-
+body_classes: 'header-image fullwidth'
 content:
-    items: @self.children
+    items: '@self.children'
+    limit: 5
     order:
         by: date
         dir: desc
-    limit: 5
-    pagination: true
-
+    pagination: '1'
+show_sidebar: true
+display_post_summary: false
+hide_post_date: false
+hide_post_taxonomy: false
+hide_git_sync_repo_link: false
+hide_sidebar: true
+blog_url: blog
 feed:
-    description: Sample Blog Description
+    description: 'Sample Blog Description'
     limit: 10
-
 pagination: true
 ---
 
