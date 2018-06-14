@@ -2,6 +2,7 @@
 namespace Grav\Theme;
 
 use Grav\Common\Theme;
+use RocketTheme\Toolbox\Event\Event;
 
 class Bootstrap4OpenMatter extends Bootstrap4
 {
