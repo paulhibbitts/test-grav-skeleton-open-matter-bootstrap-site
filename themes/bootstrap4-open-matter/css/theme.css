@@ -65,6 +65,10 @@ body {
   margin-bottom: 270px!important;
 }
 
+.header {
+    background-color: transparent!important;
+}
+
 .alert {
     padding: .15rem 1.25rem!important;
 }
