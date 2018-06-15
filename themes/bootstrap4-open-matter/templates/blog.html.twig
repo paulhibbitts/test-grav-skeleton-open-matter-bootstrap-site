@@ -1,3 +1,9 @@
+{% if page.header.hero_image %}
+  {% set header_image_media = page.media.images[page.header.hero_image] %}
+{% else %}
+  {% set header_image_media = page.media.images|first %}
+{% endif %}
+
 {% if page.header.show_sidebar is defined %}
   {% set show_sidebar = page.header.show_sidebar %}
 {% else %}
@@ -12,7 +18,10 @@
 
       {# check content display flag - hibbittsdesign.org #}
       {% if not (grav.uri.param('chromeless')) and not(theme_var('chromeless.enabled')) %}
-        {% include 'partials/hero.html.twig' %}
+        {# check for hero image - hibbittsdesign.org #}
+        {% if header_image_media is not empty %}
+          {% include 'partials/hero.html.twig' %}
+        {% endif %}
       {% endif %}
 
         <div class="main-content">
