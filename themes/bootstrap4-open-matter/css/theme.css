@@ -34,30 +34,30 @@ a:focus {
   background-size:cover;
   background-position:center;
   width: auto;
-  height: 250px;
+  height: 280px;
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1140px) {
   .myheader {
-      height: 220px;
+      height: 250px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .myheader {
-      height: 190px;
+      height: 220px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .myheader {
-      height: 150px;
+      height: 180px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .myheader {
-      height: 110px;
+      height: 130px;
   }
 }
 
