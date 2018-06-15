@@ -28,6 +28,7 @@ feed:
     description: 'Sample Blog Description'
     limit: 10
 pagination: true
+hero_classes: hero-medium
 ---
 
 # My Gravtastic Blog
