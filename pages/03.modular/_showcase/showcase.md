@@ -5,7 +5,6 @@ buttons:
     - text: Read the Documentation
       url: http://learn.getgrav.org
       primary: true
-hero_image: showcase.jpg
 ---
 
 # Welcome to Grav
