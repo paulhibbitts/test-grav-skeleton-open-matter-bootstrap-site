@@ -130,7 +130,6 @@ form:
             validate:
                 type: URL
 
-
         creativecommonslicenseoptions:
             type: section
             title: Creative Commons License
@@ -199,6 +198,16 @@ form:
           label: Menubar Background Color
           size: small
           default: '#ffffff'
+
+        navbar_position:
+          type: select
+          label: Menubar Postion
+          size: small
+          default: top
+          options:
+            top: Top
+            sticky-top: Sticky Top
+            fixed-bottom: Fixed Bottom
 
         dropdown.enabled:
             type: toggle

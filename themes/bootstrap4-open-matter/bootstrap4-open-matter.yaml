@@ -1,5 +1,6 @@
 navbar_style: navbar-dark
 navbar_bgcolor: '#444444'
+navbar_position: top
 
 dropdown:
   enabled: false
