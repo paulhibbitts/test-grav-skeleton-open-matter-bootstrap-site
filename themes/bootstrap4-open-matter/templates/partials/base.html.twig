@@ -57,12 +57,18 @@
         {% if not (grav.uri.param('chromeless')) and not(theme_var('chromeless.enabled')) %}
           <div class="footer">
               <div class="container">
-                {# added top of page navigation element - hibbittsdesign.org #}
-                <div class="up-arrow">
-                  <a href="#" id="top" title="Top of Page">
-                    <i class="fa fa-angle-up" aria-hidden="true"></i>
-                  </a>
-                </div>
+                {% if pages.find('/footer').header.footer_scroll %}
+                  {# added top of page navigation element - hibbittsdesign.org #}
+                  <div class="up-arrow">
+                    <a href="#" id="top" title="Top of Page">
+                      <i class="fa fa-angle-up" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                {% else %}
+                  <div class="up-arrow">
+                    &nbsp;
+                  </div>
+                {% endif %}
                 {# use footer folder page for content - hibbittsdesign.org #}
                 <div class="text-muted">
                   {% if (page.header.git_sync_repo_link_display is defined and page.header.git_sync_repo_link_display == 'footer' ) or (( theme_var('display_of_git_sync_repo_link') == 'footer' and page.header.git_sync_repo_link_display is not defined ) and not (page.header.hide_git_sync_repo_link)) %}
@@ -86,6 +92,6 @@
 
         {# added global scripts - hibbittsdesign.org #}
         {% include 'partials/scripts.html.twig' %}
-        
+
     </body>
 </html>
