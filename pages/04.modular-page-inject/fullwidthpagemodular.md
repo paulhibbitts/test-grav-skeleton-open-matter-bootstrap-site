@@ -1,5 +1,5 @@
 ---
-title: Modular Page
+title: Modular (Page Inject)
 onpage_menu: false
 body_classes: "modular"
 

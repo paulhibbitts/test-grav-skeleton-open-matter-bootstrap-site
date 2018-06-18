@@ -1,15 +1,26 @@
 ---
 title: Home
+metadata:
+    'twitter:card': summary
+    'twitter:site': '@getgrav'
+    'twitter:title': 'Grav CMS Open Course Hub Title'
+    'twitter:description': 'Grav CMS Open Course Hub Description'
+    'twitter:image': ''
 body_classes: 'header-image fullwidth'
 child_type: item
-post_icon: calendar-o
 content:
     items: '@self.children'
-    limit: 10
+    limit: 5
     order:
         by: date
         dir: desc
-    pagination: true
+    pagination: '1'
+show_sidebar: true
+display_post_summary: true
+post_icon: calendar-o
+hide_post_date: true
+hide_post_taxonomy: true
+hide_git_sync_repo_link: false
 modular_content:
     items: '@self.modular'
     order:
@@ -20,11 +31,5 @@ modular_content:
 feed:
     description: 'Grav CMS Open Course Hub Description'
     limit: 10
-hide_git_sync_repo_link: false
-metadata:
-    'twitter:card': summary
-    'twitter:site': '@getgrav'
-    'twitter:title': 'Grav CMS Open Course Hub Title'
-    'twitter:description': 'Grav CMS Open Course Hub Description'
-    'twitter:image': ''
 ---
+
