@@ -137,6 +137,10 @@ h4, .h4, h5, .h5 {
     margin-bottom: 5.5px;
 }
 
+.header h1 {
+  text-shadow: 1px 1px 4px rgba(34,34,34,0.6);
+}
+
 .card-header .fa {
   transition: .3s transform ease-in-out;
 }
