@@ -1,13 +1,14 @@
 {% set navbar_style = theme_var('navbar_style') %}
 {% set navbar_bgcolor = theme_var('navbar_bgcolor') %}
 {% set navbar_position = theme_var('navbar_position') %}
+{% set navbar_breakpoint = theme_var('navbar_breakpoint') %}
 
 {% set background_image = pages.find('/headerimage').media.images|first %}
 {% if background_image and not(navbar_position == 'fixed-bottom') %}
   <div class="myheader" style="background-image: url({{ background_image.url }});"></div>
 {% endif %}
 
-<nav class="navbar {{ navbar_position }} navbar-expand-md {{ navbar_style }}" style="background-color:{{ navbar_bgcolor }};" role="navigation">
+<nav class="navbar {{ navbar_position }} navbar-expand-{{ navbar_breakpoint }} {{ navbar_style }}" style="background-color:{{ navbar_bgcolor }};" role="navigation">
     <div class="container">
         <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url_relative }}">{{ site.title|e('html') }}</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

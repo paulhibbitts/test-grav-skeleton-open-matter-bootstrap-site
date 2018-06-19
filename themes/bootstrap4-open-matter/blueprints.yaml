@@ -209,6 +209,16 @@ form:
             sticky-top: Sticky Top
             fixed-bottom: Fixed Bottom
 
+        navbar_breakpoint:
+          type: select
+          label: Menubar Breakpoint
+          size: small
+          default: medium
+          options:
+            lg: Large
+            md: Medium
+            sm: Small
+
         dropdown.enabled:
             type: toggle
             label: Dropdown in Menubar
