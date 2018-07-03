@@ -65,6 +65,11 @@
                           {% endif %}
                         {% endfor %}
 
+                        {# Git repository edit link - hibbittsdesign.org #}
+                        {% if ( page.header.git_sync_repo_link_display is defined and page.header.git_sync_repo_link_display == 'page' ) or (( config.site.gitrepo.editlinklocation == 'page' and page.header.git_sync_repo_link_display is not defined ) and not (page.header.hide_git_sync_repo_link)) %}
+                          {% include 'partials/git_sync_repo_link_note.html.twig' %}
+                        {% endif %}
+
                     </div>
 
                     {# Check content display flag - hibbittsdesign.org #}
