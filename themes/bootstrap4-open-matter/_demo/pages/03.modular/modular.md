@@ -1,5 +1,6 @@
 ---
-title: 'Modular'
+title: 'Modular (Page Collection)'
+published: false
 onpage_menu: false
 content:
     items: '@self.modular'
