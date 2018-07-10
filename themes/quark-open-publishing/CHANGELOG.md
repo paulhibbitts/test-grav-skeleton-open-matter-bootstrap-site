@@ -1,3 +1,45 @@
+# v0.9.9
+## 07/07/2018
+
+1. [](#bugfix)
+    * Restored responsive blog heading text 
+
+# v0.9.8
+## 07/07/2018
+
+1. [](#new)
+    * Added support for custom global JavaScript (scripts.html.twig)
+1. [](#improved)
+    * Removed fixed blog header text color
+    * Added bricklayer layout option check before jQuery call
+    * Added check to hide Git Sync link note
+    * Added better handling of pagination on small screens (thanks OleVik)
+    * Updated Quark CSS files to latest development branch version
+1. [](#bugfix)
+    * Fixed display of link blog posts
+    * Fixed Next Post and Previous Post button display issue
+
+# v0.9.7
+## 07/06/2018
+
+1. [](#new)
+    * Added templates and blueprints for PDFs and SpeakerDeck files
+    * Added custom content list template and blueprint
+1. [](#improved)
+    * Updated link and title only templates for Embedly Cards and Swipe decks
+    * Updated location of Git Sync link on blog list pages
+    * Added drop shadow for blog hero H1,H2,H3 text
+1. [](#bugfix)
+    * Fixed incorrect responsive div classes
+
+# v0.9.6
+## 07/02/2018
+
+1. [](#improved)
+    * Updated demo pages in theme '_demo' folder
+1. [](#bugfix)
+    * Removed OERSchema dependency
+
 # v0.9.5
 ## 06/19/2018
 
