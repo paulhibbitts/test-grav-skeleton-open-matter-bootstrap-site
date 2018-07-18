@@ -1,6 +1,6 @@
-name: Bootstrap4 Open Matter
+name: BS4 Open Course Matter
 version: 0.5.0
-description: "A customized version of the Bootstrap 4 theme, with additional features to support open and collaborative educational resources."
+description: "A customized version of the Bootstrap 4 theme, with additional features to support open and collaborative course materials."
 icon: bullseye
 author:
  name: Hibbitts Design

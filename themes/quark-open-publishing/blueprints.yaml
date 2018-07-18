@@ -1,5 +1,5 @@
 name: Quark Open Publishing
-version: 1.0.0
+version: 1.0.2
 description: "A customized version of the Quark theme with Git Sync and 'chromeless' mode (as shown in screenshot)."
 icon: unlock
 author:
@@ -24,7 +24,6 @@ dependencies:
   - feed
   - form
   - git-sync
-  - image-captions
   - login
   - markdown-fontawesome
   - markdown-notices
@@ -362,6 +361,12 @@ form:
               help: The route to the blog page when working with blog sidebar
               size: medium
               default: '/blog'
+
+            blog_page_hero_classes:
+              type: text
+              label: Hero Classes
+              markdown: true
+              description: 'There are several Hero class options that can be listed here (space separated):<br />`text-light`, `text-dark`, `title-h1h2`, `parallax`, `overlay-dark-gradient`, `overlay-light-gradient`, `overlay-dark`, `overlay-light`, `hero-fullscreen`, `hero-large`, `hero-medium`, `hero-small`, `hero-tiny`<br />Please consult the [Quark documentation](https://github.com/getgrav/grav-theme-quark#hero-options) for more details.'
 
             spectre_section:
               type: section

@@ -4,7 +4,7 @@ namespace Grav\Theme;
 use Grav\Common\Theme;
 use RocketTheme\Toolbox\Event\Event;
 
-class Bootstrap4OpenMatter extends Bootstrap4
+class Bs4OpenCourseMatter extends Bootstrap4
 {
     // Boostrap plugin will look for this class var to know it should load
     public $load_bootstrapper_plugin = true;

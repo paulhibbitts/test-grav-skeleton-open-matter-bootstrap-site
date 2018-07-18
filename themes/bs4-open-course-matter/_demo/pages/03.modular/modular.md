@@ -1,5 +1,6 @@
 ---
 title: 'Modular'
+published: true
 onpage_menu: false
 content:
     items: '@self.modular'
@@ -13,3 +14,5 @@ content:
             - _features
 body_classes: 'modular header-image fullwidth'
 ---
+
+[clearboth]
